@@ -39,6 +39,12 @@
     __METHOD__ - name of class function PHP is inside
     PHP_EOL - OS-specific EOL
     PHP_OS, PHP_VERSION, DEFAULT_INCLUDE_PATH
+    
+// Loops
+    foreach ($array as $value)
+    {
+    //code to be executed;
+    } 
 
 // Conditions
     or - executes only if first condition fails; use with die()
@@ -47,6 +53,14 @@
 // Functions
     strtoupper(), isset(), die(), eval()
     strtotime() - loose converter to Unix time
+    print_r($array)
+
+// Cookies - must appear before <html>
+    setcookie("user", "Alex Porter", time()+3600); // expires in 1 hr
+    if (isset($_COOKIE["user"]))
+        echo "Welcome " . $_COOKIE["user"] . "!<br />";
+    else
+        echo "Welcome guest!<br />";
 
 // Input Filtering
     // Make sure it is an integer
@@ -87,13 +101,6 @@
     <input> - input field for user
     <select> - dropdown list: use with <option>
 
-
-
-$_SESSION[]
-$_COOKIE[]
-
 REST vs SOAP
 Site Responsiveness
-:w
 
-http://www.tuxradar.com/practicalphp/4/7/1
