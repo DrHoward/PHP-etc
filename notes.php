@@ -1,6 +1,7 @@
 /*************/
 /* PHP Notes */
 /*************/
+/*
 
 // Superglobals (9):
     $_GET, $_POST, $_COOKIE
